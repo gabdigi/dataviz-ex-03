@@ -249,7 +249,7 @@ async function LoadData3(dataURL3){
         const reclat    = columns[6];
         const reclong   = columns[7];
 
-        years3.push(year);
+        years3.push(mass);
         // console.log(mass, year);
 
         //sort data and count the number of occurence
@@ -286,7 +286,7 @@ function pieGraph(){
     //draw a bar chart
     const chart3 = new Chart(ctx3, {
         // The type of chart we want to create
-        type: 'radar',
+        type: 'line',
         // The data for our dataset
         data: {
             labels: singleYear3,
